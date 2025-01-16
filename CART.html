@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Carrinho - Cafeteria</title>
+</head>
+<body>
+<!--header-->
+<header>
+    <h1>CAFETERIA</h1>
+    <div class="header-icons">
+        <a href="index.html"><i class="fa-solid fa-bars menu-icon"></i></a>
+        <div class="cart-container">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
+            <span class="cart-count" id="cartCount">0</span>
+        </div>
+    </div>
+</header>
+<!--main-->
+<main>
+<section class="cart">
+    <h2>Seu Carrinho</h2>
+    <div id="cartItems"></div>
+    <div class="subtotal">
+        <h3>Subtotal: <span id="subtotal">R$ 0,00</span></h3>
+    </div>
+    <form>
+        <h3>Endereço de Entrega</h3>
+        <input type="text" id="address" placeholder="Digite seu endereço" required>
+        <h3>Forma de Pagamento</h3>
+        <select id="paymentMethod" required>
+            <option value="credit">Cartão de Crédito</option>
+            <option value="debit">Cartão de Débito</option>
+            <option value="paypal">Pix</option>
+        </select>
+        <h3>Código de Desconto</h3>
+        <input type="text" id="discountCode" placeholder="Digite seu código de desconto">
+        <button type="submit">Finalizar Pedido</button>
+    </form>
+</section>
+</main>
+<script src="javascript/"></script>
+</body>
+</html>

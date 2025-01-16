@@ -1,0 +1,141 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*cor*/
+    --cor01:#d9c7bb;
+    --cor02:#8c5b3f;
+    --cor03:#a68877;
+    --cor04:#592816;
+    --cor05:#26130b;
+    --cor06:#663315;
+    /*FONTS*/
+    --font01: Arial, Helvetica, sans-serif;
+    --font02: cursive;
+    --font03: 'Courier New', Courier, monospace;
+    --font04: "PT Sans", serif;
+    --font05: "Josefin Sans", serif;
+}
+
+body{
+    background-color: var(--cor04);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    margin-right: 20px;
+}
+
+.cart-container {
+    position: relative;
+}
+
+.cart-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.cart {
+    padding: 20px;
+}
+
+.cart h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.cart-item div {
+    flex-grow: 1;
+}
+
+.subtotal {
+    text-align: center;
+    margin-top: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+form {
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--cor02);
+}
+
+form h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: var(--font03);
+}
+
+form input, form select {
+    font-family: var(--font05);
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--cor05);
+    color: var(--cor01);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--cor03);
+}
