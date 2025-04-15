@@ -124,14 +124,16 @@ header h1{
     padding: 10px;
 
     background-color: #f4f4f4;
-
+    width: 200px;
 }
 .nos h2{
+
     font-family: var(--font02);
     text-align: center ;
 }
 
 .nos p{
+    width: 200px;
     padding: 0.3125rem;
     margin: 0.0625rem;
     color: #333333;
