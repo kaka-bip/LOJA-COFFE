@@ -2,77 +2,71 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
-    <title>COFFEE</title>
+    <title>LOJA-COFFEE</title>
 </head>
 <body>
-<!--header-->
-<header>
-    <h1>CAFETERIA</h1>
-    <div class="header-icons">
-        <i class="fa-solid fa-bars menu-icon" onclick="toggleMenu()"></i>
-        <div class="cart-container">
-            <a href="CART.html" target="_blank"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
-            <span class="cart-count" id="cartCount">0</span>
+    <header>
+        <img src="img/LOGO.png" alt="" class="logo">
+        <h2>LOJA-COFFEE</h2>
+
+        <i class="fas fa-bars menu-icon" id="menuBtn"></i>
+
+        <div class="nav-links" id="navMenu">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Cafés</a>
+                <a href="#">Contatos</a>
+                <a href="#">Redes Socias</a>
+            </nav>
         </div>
-    </div>
-    <nav class="menu-items" id="menuItems">
-        <a href="#sobre">Home</a>
-        <a href="">Sobre Nós</a>
-        <a href="">Cafés</a>
-        <a href="">Contatos</a>
-    </nav>
-</header>
-<!--main-->
-<main>
-<section class="nos" id="sobre">
-    <h2>Sobre Nós</h2>
-    <p>Bem-vindo ao nosso site! Somos apaixonados por café de alta qualidade e acreditamos que cada xícara conta uma história. A ideia de criar este espaço surgiu em uma noite inspiradora, pensando em como conectar pessoas ao mundo do café e proporcionar experiências únicas.
-    
-    <p>Nossa missão é levar até você os melhores grãos, cuidadosamente selecionados e preparados, para que cada momento com o café seja especial. Aqui, celebramos a arte, a tradição e a paixão que fazem do café muito mais que uma bebida.</p>
-        </p>
-</section>
-<section class="nossos">
-    <h2>Nossos Cafés</h2>
+    </header>
 
-    <div class="center">
-        <div class="card">
-            <img src="img/pdr.jfif" alt="Café">
-            <h3>Café 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem nisi quam nulla blanditiis facere laboriosam unde corrupti sed optio quae aliquid est commodi ipsum iure deleniti, fugit natus nesciunt?</p>
-            <div class="btt"><button class="button" onclick="addToCart()">COMPRAR</button></div>
+
+    <main>
+        <div class="SOBRE">
+            <h2>Sobre a Loja</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit quidem labore molestias minima dignissimos, magni similique aliquid nulla saepe, dolorem fugit ad soluta dolores quae tempore fuga nemo! Qui? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum magnam architecto enim accusantium laborum eaque, neque fugiat quam vel! Consequatur quod quos reprehenderit incidunt. Ipsum voluptatum cumque provident commodi!</p>
         </div>
-        
-    </div>
 
-    <div class="center">
-        <div class="card">
-            <img src="img/pdr.jfif" alt="Café">
-            <h3>Café 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem nisi quam nulla blanditiis facere laboriosam unde corrupti sed optio quae aliquid est commodi ipsum iure deleniti, fugit natus nesciunt?</p>
-            <div class="btt"><button class="button" onclick="addToCart()">COMPRAR</button></div>
+        <div class="Produtos">
+            <div id="Cafés">
+                <img src="img/pdr.jfif" alt="" class="imgcoofes">
+                <h2>Coffe</h2>
+                <h3>R$ 15,90</h3>
+                <p>ou 2x de R$ 7,50</p>
+                <button type="submit">Comprar</button>
+            </div>
+
+            <div id="Cafés">
+                <img src="img/pdr.jfif" alt="" class="imgcoofes">
+                <h2>Coffe</h2>
+                <h3>R$ 15,90</h3>
+                <p>ou 2x de R$ 7,50</p>
+                <button type="submit">Comprar</button>
+            </div>
+
+            <div id="Cafés">
+                <img src="img/pdr.jfif" alt="" class="imgcoofes">
+                <h2>Coffe</h2>
+                <h3>R$ 15,90</h3>
+                <p>ou 2x de R$ 7,50</p>
+                <button type="submit">Comprar</button>
+            </div>
         </div>
-        
-    </div>
+    </main>
 
-
-    <div class="center">
-        <div class="card">
-            <img src="img/pdr.jfif" alt="Café">
-            <h3>Café 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem nisi quam nulla blanditiis facere laboriosam unde corrupti sed optio quae aliquid est commodi ipsum iure deleniti, fugit natus nesciunt?</p>
-            <div class="btt"><button class="button" onclick="addToCart()">COMPRAR</button></div>
+    <footer>
+        <div class="Redes">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <p>COFFE</p>
         </div>
-    </div>
-
-</section>
-</main>
-<!--footer-->
-<footer>&copy COFFEE 2025</footer>
-<script src="javascript/java.js"></script>
+    </footer>
+    <script src="javascript/index.html"></script>
 </body>
 </html>

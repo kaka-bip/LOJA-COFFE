@@ -1,245 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 *{
-    margin: 0;;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-@media screen and (max-width: 1680rem){
-    body{
-        background-size: cover;
-    }
-    
-}
-
-@media screen and (min-width: 370rem){
-    body{
-        background-size: cover;
-    }
-    
-}
-
-:root{
-    /*cor*/
-    --cor01:#d9c7bb;
-    --cor02:#8c5b3f;
-    --cor03:#a68877;
-    --cor04:#592816;
-    --cor05:#26130b;
-    --cor06:#663315;
-    /*FONTS*/
-    --font01: Arial, Helvetica, sans-serif;
-    --font02: cursive;
-    --font03: 'Courier New', Courier, monospace;
-    --font04: "PT Sans", serif;
-    --font05: "Josefin Sans", serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    height: 100vh;
-    background-color: var(--cor06);
-    background-image: url(img/COFFE.FUNDO.jfif);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-attachment: fixed;
-    background-position: center top;
-    
+    background: #E4E0E1;
+    color: black;
 }
 
-header{
-    border-radius: 0.625rem;
-    padding: 0.625rem;
-    background-color:var(--cor06);
-    color: var(--cor01);
-}
-
-header h1{
-    padding: 0.3125rem;
-    margin: 0.3125rem;
-    text-align: center;
-    font-family: var(--font04);
-}
-
-
-.header-icons {
-    display: flex;
-    align-items: center;
-}
 
 .menu-icon {
+    font-size: 36px;
+    color: white;
     cursor: pointer;
-    font-size: 24px;
-    color: white;
-    margin-right: 20px;
-}
+    padding: 15px;
+  }
 
-.cart-container {
-    position: relative;
-}
-
-.cart-icon {
-    cursor: pointer;
-    font-size: 24px;
-    color: white;
-}
-
-.cart-count {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    padding: 5px 10px;
-    font-size: 14px;
-}
-
-.menu-items {
+  .nav-links {
     display: none;
-    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
     position: absolute;
-    top: 50px;
-    left: 20px;
-    background-color: #333;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.menu-items a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 0;
-}
-
-.menu-items a:hover {
-    text-decoration: underline;
-}
-
-.nos{
-    border: 2px solid black;
-    border-radius: 0.3125rem;
-
-    margin: 1px;
-    padding: 10px;
-
-    background-color: #f4f4f4;
-    width: 200px;
-}
-.nos h2{
-
-    font-family: var(--font02);
-    text-align: center ;
-}
-
-.nos p{
-    width: 200px;
-    padding: 0.3125rem;
-    margin: 0.0625rem;
-    color: #333333;
-    font-family: var(--font01);
-    text-align: justify;
-}
-
-
-
-.nossos{
-    background-color: #e1c8a7;
-    border: 3px solid black;
-    border-radius: 10px;
-
-}
-
-.nossos h2{
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
-    font-family: var(--font02);
-}
-
-.nossos img {
-    background-position: center;
-    position: relative;
-    width: 12.5rem;
-    height: 12.5rem;
-    margin: 0.625rem;
-    padding: 0.3125rem;
-    object-fit: cover;
-    border-radius: 0.625rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-}
-
-.card {
-    background-color: var(--cor05);
-    margin: 30px;
-    padding: 9px;
-    height: 405px;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px #0000001a;
-    text-align: center;
-    transform: scale(0.90);
-    transition: all 0.3s ease;
-}
-
-.card:hover{
-transform: scale(1.1);
-}
-
-.card img {
-    background-color:#faebd7;
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.card p {
-    color: white;
-    text-align: center;
-    font-weight: 700;
-}
-
-.card h3{
-    text-align: center;
-    color: whitesmoke;
-}
-
-.btt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-
-}
-
-.button{
-    font-family:var(--font05) ;
-    background-color: #d20202;
-    color: white;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-
-}
-
-footer{
-    background-color: lightgray;
-    position: fixed;
+    top: 60px;
     left: 0;
-    bottom: 0;
     width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 8px 0;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .nav-links a:hover {
+    background-color: #eee;
+  }
+
+.logo{
+    background: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px; 
+    margin-right: 15px;
+}
+
+#Cafés{
     text-align: center;
-    font-family: var(--font03);
-    border-radius: 0.625rem;
-    color: black;
+    align-items: center;
+    border: 3px solid black;
+    width: 220px;
+    display: block;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+img{
+    border-radius: 15px;
+    width: 200px;
 }
