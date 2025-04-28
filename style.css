@@ -84,6 +84,58 @@ align-items: center;
     width: 200px;
 }
 
+.contato{
+  background-color: #cccaca;
+  color: #fff;
+  margin: 1px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center; 
+  flex-direction: column;
+  height: 90vh;
+}
+
+#fundo{
+  background-color: white;
+  color: #000;
+  margin: 2px;
+  padding: 5px ;
+}
+
+.contato{
+  background: url(img/COFFE.FUNDO.jfif) no-repeat center center;
+  background-size: cover;
+}
+
+.fundo{
+  background-color: #000000c4;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  height: 200px;
+}
+
+input{
+  margin: 2px;
+  padding: 6px;
+  justify-content: center;
+  border-radius: 10px;
+  width: 200px;
+}
+
+button{
+  margin: 2px;
+  padding: 10px;
+  width: 150px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  color: #000;
+  font-size: 15px;
+}
+
 .Redes{
     background-color: #000;
     color: #fff;
@@ -91,4 +143,18 @@ align-items: center;
     align-items: center;
     margin-top: 10px;
     padding: 5px;
+}
+
+i{
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+
+i:hover{
+ transform: scale(1.2);
 }
