@@ -14,74 +14,101 @@
         <img src="img/LOGO.png" alt="" class="logo" id="logo">
         <h2>COFFEE-XAVIER</h2>
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Cafés</a>
-                <a href="#">Contatos</a>
-                <a href="#">Redes Socias</a>
+                <a href="#SOBRE">Home</a>
+                <a href="#CAFÉS">Cafés</a>
+                <a href="#CONTATO">Contatos</a>
+                <a href="#REDES">Redes Socias</a>
             </nav>
         </div>
     </header>
 
 
     <main>
-        <div class="SOBRE">
+        <div class="SOBRE" id="SOBRE">
             <h2>Sobre a Loja</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit quidem labore molestias minima dignissimos, magni similique aliquid nulla saepe, dolorem fugit ad soluta dolores quae tempore fuga nemo! Qui? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum magnam architecto enim accusantium laborum eaque, neque fugiat quam vel! Consequatur quod quos reprehenderit incidunt. Ipsum voluptatum cumque provident commodi!</p>
         </div>
 
-        <div class="Produtos">
+        <div class="Produtos" id="CAFÉS">
             <h2>CARDÁPIO</h2>
-            <div id="Cafés">
+            <div class="cafes-container">
+              <div class="cafe">
                 <img src="img/pdr.jfif" alt="" class="imgcoofes">
                 <h2>Coffe</h2>
                 <h3>R$ 15,90</h3>
                 <p>ou 2x de R$ 7,50</p>
-                <button type="submit">Comprar</button>
-            </div>
+                <button type="submit" class="bttn">Comprar</button>
+              </div>
+          
+              <div class="cafe">
+                <img src="img/pdr.jfif" alt="" class="imgcoofes">
+                <h2>Coffe</h2>
+                <h3>R$ 15,90</h3>
+                <p>ou 2x de R$ 7,50</p>
+                <button type="submit" class="bttn">Comprar</button>
+              </div>
+          
+              <div class="cafe">
+                <img src="img/pdr.jfif" alt="" class="imgcoofes">
+                <h2>Coffe</h2>
+                <h3>R$ 15,90</h3>
+                <p>ou 2x de R$ 7,50</p>
+                <button type="submit" class="bttn">Comprar</button>
+              </div>
 
-            <div id="Cafés">
+              <div class="cafe">
                 <img src="img/pdr.jfif" alt="" class="imgcoofes">
                 <h2>Coffe</h2>
                 <h3>R$ 15,90</h3>
                 <p>ou 2x de R$ 7,50</p>
-                <button type="submit">Comprar</button>
-            </div>
+                <button type="submit" class="bttn">Comprar</button>
+              </div>
 
-            <div id="Cafés">
+              <div class="cafe">
                 <img src="img/pdr.jfif" alt="" class="imgcoofes">
                 <h2>Coffe</h2>
                 <h3>R$ 15,90</h3>
                 <p>ou 2x de R$ 7,50</p>
-                <button type="submit">Comprar</button>
+                <button type="submit" class="bttn">Comprar</button>
+              </div>
+
+              <div class="cafe">
+                <img src="img/pdr.jfif" alt="" class="imgcoofes">
+                <h2>Coffe</h2>
+                <h3>R$ 15,90</h3>
+                <p>ou 2x de R$ 7,50</p>
+                <button type="submit" class="bttn">Comprar</button>
+              </div>
             </div>
+          </div>
+
+        <div id="fundo">
+            <h2>Qualquer ajuda e so chamar a genter</h2>
+            <p>A Sua opinião faz toda diferença para continuarmos aprimorando a qualidade dos nossos produtos e do nosso atendimento.</p>
         </div>
-
-        <div class="contato">
-            <div id="fundo">
-                <h2>Qualquer ajuda e so chamar a genter</h2>
-                <p>A Sua opinião faz toda diferença para continuarmos aprimorando a qualidade dos nossos produtos e do nosso atendimento.</p>
-            </div>
+        <div class="contato" id="CONTATO">
             <div class="fundo">
+                <form action="https://formsubmit.co/contatemporaria6565@gmail.com" method="POST">
                 <div class="input">
-                    <input type="email" name="" id=""placeholder="EMAIL"><br>
-                    <input type="password" name="" id="" placeholder="SENHA"><br>
-                    <input type="text" name="ESCREVA SUA MENSAGEM"
-                    placeholder="ESCREVA SUA MENSAGEM" id="">
-                    <button type="submit">Enviar</button>
-            </div>
+                    <input type="email" name="" id=""placeholder="Email" required><br>
+                    <input type="text" name="" id="" placeholder="Nome" required><br>
+                    <input type="text" name="Mensagem" id="" placeholder="Escreva sua Mensagem">
+                    <button type="submit" id="button">Enviar</button>
+                    </div>
+                </form>
             </div>
         </div>
 
     </main>
 
     <footer>
-        <div class="Redes">
+        <div class="Redes" id="REDES">
             <i class="fa-brands fa-whatsapp"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-facebook"></i>
             <p>COFFE</p>
         </div>
     </footer>
-    <script src="javascript/index.html"></script>
+    <script src="javascript/index.js"></script>
 </body>
 </html>
